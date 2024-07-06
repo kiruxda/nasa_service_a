@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title> Astronomy Picture of the Day </title>
+    <link th:href="@{/styles/cssandjs/main.css}" rel="stylesheet" />
+    <script type="text/javascript" th:src="@{/js/cssandjs/actions.js}"></script>
+</head>
+<body>
+    <div class="features">
+    <h1 th:text="${date} + ' ' + ${title}"></h1>
+    <div class="center-image"><img th:src="${hdurl}"></img></div>
+    <p th:text="${explanation}"></p>
+        <label for="date">Выберите дату:</label>
+        <input type="date" id="date" min="1995-06-16" max="YYYY-MM-DD" />
+        <button type="submit" th:onclick="getDate()" id="button">Посмотреть</button>
+    </div>
+</body>
+</html>

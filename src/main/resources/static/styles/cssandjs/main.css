@@ -1,0 +1,17 @@
+body {
+    background: rgb(37, 37, 37);
+}
+img{
+    width: 70%;
+    height: auto;
+}
+.center-image{
+    text-align: center;
+}
+.features{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
